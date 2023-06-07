@@ -1,10 +1,12 @@
 public class FirePokemon extends Pokemon{
 
     private String color;
+    private Boolean strong;
 
-    public FirePokemon(String name, Integer hp, Integer level, String type, Integer xp, String color) {
+    public FirePokemon(String name, Integer hp, Integer level, String type, Integer xp, String color, Boolean strong) {
         super(name, hp, level, type, xp);
         this.color = color;
+        this.strong = strong;
     }
 
     //Getters and Setters
@@ -13,6 +15,12 @@ public class FirePokemon extends Pokemon{
     }
     public void setColor(String color) {
         this.color = color;
+    }
+    public Boolean getStrong() {
+        return strong;
+    }
+    public void setStrong(Boolean strong) {
+        this.strong = strong;
     }
 
     //Override

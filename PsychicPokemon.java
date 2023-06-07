@@ -1,10 +1,12 @@
 public class PsychicPokemon extends Pokemon{
     private Integer specialDefence;
+    private Integer specialAttack;
 
 
-    public PsychicPokemon(String name, Integer hp, Integer level, String type, Integer xp, Integer specialDefence) {
+    public PsychicPokemon(String name, Integer hp, Integer level, String type, Integer xp, Integer specialDefence, Integer specialAttack) {
         super(name, hp, level, type, xp);
         this.specialDefence = specialDefence;
+        this.specialAttack = specialAttack;
     }
 
     // Getter and Setter
@@ -13,9 +15,14 @@ public class PsychicPokemon extends Pokemon{
     public Integer getSpecialDefence() {
         return specialDefence;
     }
-
     public void setSpecialDefence(Integer specialDefence) {
         this.specialDefence = specialDefence;
+    }
+    public Integer getSpecialAttack(){
+        return specialAttack;
+    }
+    public void setSpecialAttack(Integer specialAttack){
+        this.specialAttack = specialAttack;
     }
     //Override
     @Override
@@ -27,7 +34,6 @@ public class PsychicPokemon extends Pokemon{
         System.out.println(this.getName() + " do tackle!");
         pokemon.setHp(pokemon.getHp() - attack);
         this.setSpecialDefence(this.getSpecialDefence() + 100);
-
     }
     //Special Attack
     public void psychic(Integer attack, Pokemon pokemon){
