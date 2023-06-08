@@ -7,8 +7,7 @@ public class Main {
     GrassPokemon chicorita = new GrassPokemon("Chicorita", 300, 34, "Grass", 55, 200,"Guatamala");
     WaterPokemon wailmer = new WaterPokemon("Wailmer", 600, 41,"Water", 300, 300, true);
     FirePokemon torkoal = new FirePokemon("Torkoal", 150, 20,"fire", 200, "Black",false);
-    PsychicPokemon gardevoir = new PsychicPokemon("Gardevoir", 400,50, "Psychic/Fairy", 200,500,600);
-
+    PsychicPokemon gardevoir = new PsychicPokemon("Gardevoir", 400,50, "Psychic/Fairy", 200,500, 600);
 
 
     }
