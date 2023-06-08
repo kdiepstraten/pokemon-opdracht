@@ -10,8 +10,6 @@ public class PsychicPokemon extends Pokemon{
     }
 
     // Getter and Setter
-
-
     public Integer getSpecialDefence() {
         return specialDefence;
     }
@@ -46,5 +44,12 @@ public class PsychicPokemon extends Pokemon{
         System.out.println(this.getName() + " use Confusion!");
         pokemon.setHp(pokemon.getHp() - attack);
         this.setXp(this.getXp() + attack);
+    }
+    // Laat een pokemon een level omhoog gaan na 200 xp
+    public void levelUp(Pokemon pokemon){
+        if (pokemon.getXp()> 200){
+            pokemon.setLevel(pokemon.getLevel() + 1);
+            pokemon.setXp(0);
+        }
     }
 }

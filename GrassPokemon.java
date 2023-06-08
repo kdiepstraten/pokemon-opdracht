@@ -53,4 +53,11 @@ public class GrassPokemon extends Pokemon{
         pokemon.setHp(pokemon.getHp() - attack);
         this.setXp(this.getXp() + attack);
     }
+    // Laat een pokemon een level omhoog gaan na 200 xp
+    public void levelUp(Pokemon pokemon){
+        if (pokemon.getXp()> 200){
+            pokemon.setLevel(pokemon.getLevel() + 1);
+            pokemon.setXp(0);
+        }
+    }
 }

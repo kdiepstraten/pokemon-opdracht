@@ -1,6 +1,6 @@
 import java.sql.SQLOutput;
 
-public class Pokemon {
+abstract public class Pokemon  {
     private String name;
     private Integer hp;
     private Integer xp;
@@ -29,43 +29,33 @@ public class Pokemon {
     }
 
     //Getters and Setters
-
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public Integer getHp() {
         return hp;
     }
-
     public void setHp(Integer hp) {
         this.hp = hp;
     }
-
     public Integer getXp() {
         return xp;
     }
-
     public void setXp(Integer xp) {
         this.xp = xp;
     }
-
     public Integer getLevel() {
         return level;
     }
-
     public void setLevel(Integer level) {
         this.level = level;
     }
-
     public String getType() {
         return type;
     }
-
     public void setType(String type) {
         this.type = type;
     }
